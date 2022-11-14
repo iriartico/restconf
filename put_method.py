@@ -1,8 +1,9 @@
 # Libraries
+import os
 import requests
-import basic_info as i
 import sys  # access to the variables
-sys.path.append(".")
+sys.path.append(os.getcwd())
+import basic_info as i
 
 
 def put_method(url, yangConfig):

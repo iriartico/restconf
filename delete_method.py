@@ -3,10 +3,11 @@ import json
 import requests
 import basic_info as i
 import sys  # access to the variables
-sys.path.append(".")
+import os
+sys.path.append(os.getcwd())
 
 
-def get_method(url):
+def delete_method(url):
     # request
     req = requests.delete(url, auth=i.login, headers=i.header, verify=False)
     # response

@@ -3,7 +3,8 @@ import json
 import requests
 import basic_info as i
 import sys  # access to the variables
-sys.path.append(".")
+import os
+sys.path.append(os.getcwd())
 
 
 def get_method(url):

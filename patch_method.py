@@ -1,8 +1,10 @@
 # Libraries
 import requests
-import basic_info as i
 import sys  # access to the variables
-sys.path.append(".")
+import os
+sys.path.append(os.getcwd())
+import basic_info as i
+
 
 
 def patch_method(url, yangConfig):
