@@ -2,9 +2,9 @@
 import sys
 import os
 sys.path.append(os.getcwd())
-import get_method as get
-import patch_method as patch
-import basic_info as i
+import http_methods.get as get
+import http_methods.patch as patch
+import http_methods.connection as i
 
 # URL
 url = f"https://{i.server}/{i.rest_path}/data/ietf-interfaces:interfaces/interface=GigabitEthernet2"

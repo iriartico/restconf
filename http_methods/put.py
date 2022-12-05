@@ -3,7 +3,7 @@ import os
 import requests
 import sys  # access to the variables
 sys.path.append(os.getcwd())
-import basic_info as i
+import connection as i
 
 
 def put_method(url, yangConfig):

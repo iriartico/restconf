@@ -1,18 +1,17 @@
 # Libraries
+import json
 import requests
+import connection as i
 import sys  # access to the variables
 import os
 sys.path.append(os.getcwd())
-import basic_info as i
 
 
-
-def patch_method(url, yangConfig):
+def delete_method(url):
     # request
-    req = requests.patch(url, auth=i.login, headers=i.header,
-                         data=yangConfig, verify=False)
+    req = requests.delete(url, auth=i.login, headers=i.header, verify=False)
     # response
     if req.status_code in [200, 201, 202, 204]:
-        print(f"Successful. PATCH Method. Status code: {req.status_code}")
+        print(f"Successful. DELETE Method. Status code: {req.status_code}")
     else:
         print(f"Error retrieving data. Status code: {req.status_code}")

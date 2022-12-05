@@ -1,7 +1,7 @@
 # Libraries
 import json
 import requests
-import basic_info as i
+import connection as i
 import sys  # access to the variables
 import os
 sys.path.append(os.getcwd())

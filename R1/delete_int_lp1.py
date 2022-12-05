@@ -2,9 +2,9 @@
 import sys
 import os
 sys.path.append(os.getcwd())
-import get_method as get
-import delete_method as delete
-import basic_info as i
+import http_methods.get as get
+import http_methods.delete as delete
+import http_methods.connection as i
 
 url = f"https://{i.server}/{i.rest_path}/data/ietf-interfaces:interfaces/interface=Loopback1"
 print(url)
