@@ -1,0 +1,8 @@
+---
+ietf-interfaces:interface:
+  enabled: true
+  description: To R2
+  ietf-ip:ipv4:
+    address:
+    - ip: 10.10.10.1
+      netmask: 255.255.255.252
