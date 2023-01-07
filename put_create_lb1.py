@@ -1,10 +1,7 @@
 # Libraries
-import sys
-import os
-sys.path.append(os.getcwd())
-import get_method as get
-import put_method as put
-import basic_info as i
+from http_methods import get
+from http_methods import put
+import connection as i
 
 # URL
 url = f"https://{i.server}/{i.rest_path}/data/ietf-interfaces:interfaces/interface=Loopback1"
@@ -30,5 +27,5 @@ yangConfig = """
   }
 }
 """
-put.put_method(url, yangConfig)
-get.get_method(url)
+put(url, yangConfig)
+get(url)

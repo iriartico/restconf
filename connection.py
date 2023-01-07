@@ -1,6 +1,4 @@
 # Libraries
-import json
-import requests
 from requests.auth import HTTPBasicAuth
 import urllib3  # SSL certificates
 urllib3.disable_warnings(urllib3.exceptions.InsecureRequestWarning)

@@ -1,10 +1,7 @@
 # Libraries
-import sys
-import os
-sys.path.append(os.getcwd())
-import get_method as get
-import patch_method as patch
-import basic_info as i
+from http_methods import get
+from http_methods import patch
+import connection as i
 
 # URL
 url = f"https://{i.server}/{i.rest_path}/data/ietf-interfaces:interfaces/interface=GigabitEthernet2"
@@ -28,5 +25,5 @@ yangConfig = """
 
 }
 """
-patch.patch_method(url, yangConfig)
-get.get_method(url)
+patch(url, yangConfig)
+get(url)
