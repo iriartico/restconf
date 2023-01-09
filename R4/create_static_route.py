@@ -17,23 +17,29 @@ yangConfig = """
       "ietf-ipv4-unicast-routing:ipv4": {
         "route": [
           {
+            "destination-prefix": "10.0.0.0/30",
+            "next-hop": {
+              "next-hop-address": "10.0.0.14"
+            }
+          },
+          {
             "destination-prefix": "192.168.100.0/24",
             "next-hop": {
-              "next-hop-address": "10.0.0.2"
+              "next-hop-address": "10.0.0.14"
             }
           },
           {
-            "destination-prefix": "172.16.10.0/26",
+            "destination-prefix": "10.0.0.4/30",
             "next-hop": {
-              "next-hop-address": "10.0.0.13"
+              "next-hop-address": "10.0.0.9"
             }
           },
           {
-            "destination-prefix": "200.87.100.0/28",
+            "destination-prefix": "192.168.100.0/24",
             "next-hop": {
-              "next-hop-address": "10.0.0.13"
+              "next-hop-address": "10.0.0.9"
             }
-          }
+          }        
         ]
       }
     }

@@ -4,7 +4,7 @@ from http_methods import patch
 import connection as i
 
 # URL
-url = f"https://{i.server}/{i.rest_path}/data/ietf-interfaces:interfaces/interface=GigabitEthernet2"
+url = f"https://{i.server}/{i.rest_path}/data/ietf-interfaces:interfaces/interface=GigabitEthernet4"
 print(url)
 
 # PAYLOAD
@@ -12,11 +12,11 @@ yangConfig = """
 {
   "ietf-interfaces:interface": {
     "enabled": true,
-    "description": "To R2",
+    "description": "To R1",
     "ietf-ip:ipv4": {
       "address": [
         {
-          "ip": "10.0.0.1",
+          "ip": "10.0.0.13",
           "netmask": "255.255.255.252"
         }
       ]

@@ -12,11 +12,11 @@ yangConfig = """
 {
   "ietf-interfaces:interface": {
     "enabled": true,
-    "description": "To R2",
+    "description": "To R1",
     "ietf-ip:ipv4": {
       "address": [
         {
-          "ip": "10.0.0.1",
+          "ip": "10.0.0.2",
           "netmask": "255.255.255.252"
         }
       ]

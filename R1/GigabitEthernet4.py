@@ -16,13 +16,12 @@ yangConfig = """
     "ietf-ip:ipv4": {
       "address": [
         {
-          "ip": "10.10.10.14",
+          "ip": "10.0.0.14",
           "netmask": "255.255.255.252"
         }
       ]
     }
   }
-
 }
 """
 patch(url, yangConfig)
